@@ -3,19 +3,17 @@ label: "label"
 path2data: "dataset"
 path2data_test: "test_img"
 format_img: "png"
-class2label: {"email": 0, "resume" : 1, "publication" : 2}
-label2class: {0 : "email", 1 : "resume", 2 : "publication"}
+class2label: {"": 0, "" : 1, "" : 2}
+label2class: {0 : "", 1 : "", 2 : ""}
 
 # For ImageClassifer
-path2processor: "microsoft/layoutlmv2-base-uncased"
-path2modelbackbone: "microsoft/layoutlmv2-base-uncased"
 is_train: false
 loss: "cross_entropy"
 lr: 0.01
 batch_size: 10
 feature_size: 768
 num_epochs: 10
-model_name: "models/layoutLMV3.pth"
+model_name: "models/vgg16.pth"
 freeze_layer: -1
 writername: "tensorboard_run/test2"
 log_item_name: ["train_loss", "accuracy"]
