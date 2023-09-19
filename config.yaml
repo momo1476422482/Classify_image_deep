@@ -19,3 +19,4 @@ model_name: "models/layoutLMV3.pth"
 freeze_layer: -1
 writername: "tensorboard_run/test2"
 log_item_name: ["train_loss", "accuracy"]
+
